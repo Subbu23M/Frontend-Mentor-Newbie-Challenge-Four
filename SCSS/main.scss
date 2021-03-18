@@ -1,0 +1,139 @@
+// Colors
+
+// hsl- hue, saturation and lightness
+
+$Cyan: hsl(179, 62%, 43%);
+
+$BrightYellow: hsl(71, 73%, 54%);
+
+$LightGray: hsl(204, 43%, 93%);
+
+$GrayishBlue: hsl(218, 22%, 67%);
+
+// Universal Effects
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla',sans-serif;
+    background-color: $LightGray;
+    overflow-x: hidden;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.button{
+    font-family: 'Karla',sans-serif;
+}
+
+.mar{
+    margin-left: 19rem;
+    margin-top: 5rem;
+}
+
+.context{
+    // border:size style color
+    border: 1px solid gainsboro;
+    
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    
+    background-color: white;
+    padding: 0.6rem;
+    
+    h4{
+        color: $Cyan;
+    }
+    
+    .first{
+        color:$BrightYellow;
+        font-size: 20px;
+    }
+    
+    .second{
+        color: $GrayishBlue;
+        font-size: 17px;
+    }
+}
+
+.column-one{
+    background-color:$Cyan ;
+    
+    h5{
+        color: white;
+        font-weight: 400;
+    }
+
+    h4{
+        color: white;
+        font-weight: 700;
+
+        span{
+            color: $LightGray;
+        }
+    }
+
+    p{
+        color: $LightGray;
+    }
+
+    .button{
+        .btn{
+            background-color: $BrightYellow;
+            width: 290px;
+        }
+    }
+    border-bottom-left-radius: 7px;
+}
+
+.column-two{
+    background-color: teal;
+
+    h5{
+        color: white;
+    }
+
+    p{
+        color: $LightGray;
+        font-size: 0.8rem;
+    }
+
+    border-bottom-right-radius: 7px;
+}
+
+// Media Queries on
+// XS screens
+@media only screen  and (max-width:600px){
+    .context{
+        border-radius: 0;
+    }
+
+    .column-two{
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Media Queries on
+// XS screens
+@media only screen and (max-width:600px){
+    .column-one,.column-two{
+        border-radius: 0;
+    }
+}
+
+// Media Queries on
+// XS screens
+@media only screen and (max-width:600px){
+    .mar{
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

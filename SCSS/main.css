@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Karla',sans-serif;
+  background-color: #e5eff5;
+  overflow-x: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button {
+  font-family: 'Karla',sans-serif;
+}
+
+.mar {
+  margin-left: 19rem;
+  margin-top: 5rem;
+}
+
+.context {
+  border: 1px solid gainsboro;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: white;
+  padding: 0.6rem;
+}
+
+.context h4 {
+  color: #2ab2af;
+}
+
+.context .first {
+  color: #c0df34;
+  font-size: 20px;
+}
+
+.context .second {
+  color: #98a6bd;
+  font-size: 17px;
+}
+
+.column-one {
+  background-color: #2ab2af;
+  border-bottom-left-radius: 7px;
+}
+
+.column-one h5 {
+  color: white;
+  font-weight: 400;
+}
+
+.column-one h4 {
+  color: white;
+  font-weight: 700;
+}
+
+.column-one h4 span {
+  color: #e5eff5;
+}
+
+.column-one p {
+  color: #e5eff5;
+}
+
+.column-one .button .btn {
+  background-color: #c0df34;
+  width: 290px;
+}
+
+.column-two {
+  background-color: teal;
+  border-bottom-right-radius: 7px;
+}
+
+.column-two h5 {
+  color: white;
+}
+
+.column-two p {
+  color: #e5eff5;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .context {
+    border-radius: 0;
+  }
+  .column-two p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .column-one, .column-two {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mar {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
